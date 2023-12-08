@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CuntryCard from "./components/CountryCard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="worldContainer">
+    <div className="wordInner">
+    <CuntryCard
+      name={"Nepal"}
+      capital={"Kathmandu"}
+      population={"3cr"}
+      flagUrl={"data:image/png;base64,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"}
+      />
+      <CuntryCard
+      name={"India"}
+      capital={"Delhi"}
+      population={"130cr"}
+      flagUrl={"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAflBMVEXxWyUAaTT////xVhoAZCz2kXFfmnrz8/fY2OTS0uDk5OwnJ2729vnq6vHw8PX6+vy9vc8jI21sbJcAAGEMDGSoqMKBgadgYJBbW4txcZuHh6kxMXIYGGjGxtcsLG8SEmU7O3odHWmZmba3t854eJ9RUYVISH+RkbFBQXyvr8UfgS9oAAABwUlEQVRoge2W2W6cMBRAyU1bvOCFfTBhMyae+f8f7G0aKW3VaibCVl98hIwf0BHy9V2yLJFIJBKJRCKR+B88RyT7GpEMPoGSUn3m+4fl+a3iNcKrWx5YLrtmqbeyqsqtXhYjQsr3ueErLUhRUEVX3ox7OLltNi8kEBACFyn81thQcluvThH8fyAEFyDKXetH7A/I94ZTAEahVYSoFihDP290CLmYFweTAguaIho3agK3zPejel/uGg9QWCU64bX2+FIWL6Nv3Hk541dBGORDbkhvbU8MboERtnJ2Wm6Xi4SpZbKfjsGY4aC9EO0E8rLY0/KjpAUmkff6MJ3B59DWSzwoWh5n5XJ8FWxvqdQX48ww4HLZJb3dmHgd5Uk54SXe8HzqKtf5a1leO4PbCSNKNk5OyulLh9Gjk24HN/B55m4YWj1RjLF7oaHlQ0B51GOJGtCoV/E9iWycJGJ8ZVgHc/eR/i5Y+kctXCDGv5fcMUTJjdosfm1zjIVuc28N2vzeoO/flIflsI8/RgtFf44WZdDRApPILG9DUb+FH4og6jj3jrxXTf6Qf4tI9iUi2VNEkjzJkzzJkzzJkzzJkzzJ/8V3qoFT2IY72o0AAAAASUVORK5CYII="}
+      />
+    
+
+
     </div>
+      
+    </div>
+    </>
   );
 }
 
